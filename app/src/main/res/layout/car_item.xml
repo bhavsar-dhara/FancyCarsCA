@@ -5,7 +5,7 @@
     
     <data>
         <variable
-            name="model"
+            name="viewModel"
             type="com.dhara.myfancycarsapp.fancycars.viewmodel.FancyCarsViewModel" />
     </data>
     
@@ -31,7 +31,6 @@
                 android:id="@+id/picture"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src=""
                 android:layout_alignParentStart="true"
                 android:adjustViewBounds="true"
                 android:contentDescription="@string/car_image" />
@@ -76,6 +75,15 @@
                 android:layout_below="@id/availability"
                 android:textAlignment="textStart"
                 tools:text="Car Year" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/picture"
+                android:layout_below="@id/year"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:text="@string/buy" />
     
         </RelativeLayout>
     

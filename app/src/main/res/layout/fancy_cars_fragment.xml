@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/fancycars"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".fancycars.view.FancyCarsFragment">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
         <variable
@@ -13,8 +9,8 @@
             type="com.dhara.myfancycarsapp.fancycars.viewmodel.FancyCarsViewModel" />
     </data>
 
-    <RelativeLayout
-        android:id="@+id/car_list_view"
+    <FrameLayout
+        android:id="@+id/fancycars"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".fancycars.view.FancyCarsFragment">
@@ -25,6 +21,6 @@
             android:layout_height="match_parent"
             android:scrollbars="vertical" />
 
-    </RelativeLayout>
+    </FrameLayout>
 
 </layout>
