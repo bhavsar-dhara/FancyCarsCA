@@ -28,9 +28,5 @@ public class FancyCarsActivity extends AppCompatActivity {
                     .commitNow();
         }
     }
-
-    // TODO: on back press exit app; do not show the MainActivity loading screen
-
-
     // TODO: handle app when no network connection present
 }

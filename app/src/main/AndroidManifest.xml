@@ -15,7 +15,8 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".fancycars.view.FancyCarsActivity" />
-        <activity android:name=".main.view.MainActivity">
+        <activity android:name=".main.view.MainActivity"
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
