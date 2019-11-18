@@ -10,11 +10,15 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.dhara.myfancycarsapp.R;
 import com.dhara.myfancycarsapp.databinding.FancyCarsFragmentBinding;
+import com.dhara.myfancycarsapp.fancycars.model.FancyCarDetails;
 import com.dhara.myfancycarsapp.fancycars.viewmodel.FancyCarsViewModel;
+
+import java.util.List;
 
 public class FancyCarsFragment extends Fragment {
 
@@ -56,6 +60,21 @@ public class FancyCarsFragment extends Fragment {
         }
 
         binding.setModel(mViewModel);
+
+        mViewModel.loading.set(View.VISIBLE);
+        mViewModel.fetchList();
+        mViewModel.getCars().observe(this, new Observer<List<FancyCarDetails>>() {
+            @Override
+            public void onChanged(List<FancyCarDetails> cars) {
+                mViewModel.loading.set(View.GONE);
+                if (cars.size() == 0) {
+                    mViewModel.showEmpty.set(View.VISIBLE);
+                } else {
+                    mViewModel.showEmpty.set(View.GONE);
+                    mViewModel.setCarsInAdapter(cars);
+                }
+            }
+        });
     }
 
     @Override

@@ -7,6 +7,9 @@
         <variable
             name="viewModel"
             type="com.dhara.myfancycarsapp.fancycars.viewmodel.FancyCarsViewModel" />
+        <variable
+            name="position"
+            type="java.lang.Integer" />
     </data>
     
     <androidx.cardview.widget.CardView
@@ -22,15 +25,13 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingStart="4dp"
-            android:paddingEnd="4dp"
-            android:paddingTop="12dp"
-            android:paddingBottom="12dp">
+            android:padding="12dp">
     
             <ImageView
                 android:id="@+id/picture"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
                 android:layout_alignParentStart="true"
                 android:adjustViewBounds="true"
                 android:contentDescription="@string/car_image" />
@@ -41,6 +42,7 @@
                 android:layout_height="wrap_content"
                 android:layout_toEndOf="@id/picture"
                 android:layout_alignParentTop="true"
+                android:text='@{viewModel.getCarDetailsAt(position).name}'
                 tools:text="Car Name" />
     
             <TextView
@@ -49,6 +51,7 @@
                 android:layout_height="wrap_content"
                 android:layout_toEndOf="@id/picture"
                 android:layout_below="@id/name"
+                android:text='@{viewModel.getCarDetailsAt(position).make}'
                 tools:text="Car Make" />
     
             <TextView
@@ -57,6 +60,7 @@
                 android:layout_height="wrap_content"
                 android:layout_toEndOf="@id/picture"
                 android:layout_below="@id/make"
+                android:text='@{viewModel.getCarDetailsAt(position).model}'
                 tools:text="Car Model" />
     
             <TextView
@@ -65,6 +69,7 @@
                 android:layout_height="wrap_content"
                 android:layout_toEndOf="@id/picture"
                 android:layout_below="@id/model"
+                android:text='@{viewModel.getCarDetailsAt(position).availability}'
                 tools:text="Car Availability" />
     
             <TextView
@@ -74,6 +79,7 @@
                 android:layout_toEndOf="@id/picture"
                 android:layout_below="@id/availability"
                 android:textAlignment="textStart"
+                android:text='@{Integer.toString(viewModel.getCarDetailsAt(position).year)}'
                 tools:text="Car Year" />
 
             <Button
@@ -81,7 +87,7 @@
                 android:layout_height="wrap_content"
                 android:layout_toEndOf="@id/picture"
                 android:layout_below="@id/year"
-                android:visibility="gone"
+                android:visibility='@{viewModel.buyBtnVisibility(position)}'
                 tools:visibility="visible"
                 android:text="@string/buy" />
     

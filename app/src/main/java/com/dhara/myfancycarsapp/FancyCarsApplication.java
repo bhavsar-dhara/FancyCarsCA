@@ -3,6 +3,9 @@ package com.dhara.myfancycarsapp;
 import android.app.Application;
 import android.content.res.Configuration;
 
+import com.dhara.myfancycarsapp.backend.ApiService;
+import com.dhara.myfancycarsapp.backend.LocalWebService;
+import com.dhara.myfancycarsapp.backend.RemoteWebService;
 import com.dhara.myfancycarsapp.utils.ReleaseTree;
 import com.squareup.leakcanary.LeakCanary;
 
@@ -13,6 +16,11 @@ public class FancyCarsApplication extends Application {
     private static final String TAG = FancyCarsApplication.class.getSimpleName();
 
     private static FancyCarsApplication mInstance;
+    private static ApiService apiService;
+
+    public static ApiService getApiService() {
+        return apiService;
+    }
 
     @Override
     public void onCreate() {
@@ -20,13 +28,14 @@ public class FancyCarsApplication extends Application {
         mInstance = this;
 
         if(BuildConfig.DEBUG) {
+            apiService = new LocalWebService(this);
             Timber.plant(new Timber.DebugTree());
             initLeakCanary();
             Timber.d("onCreate: firestore logging enabled");
         } else {
+            apiService = new RemoteWebService();
             Timber.plant(new ReleaseTree());
         }
-
     }
 
     @Override
