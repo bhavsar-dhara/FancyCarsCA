@@ -20,8 +20,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scrollbars="vertical"
+            android:visibility='@{model.showList}'
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            app:adapter="@{model.adapter}"/>
+            app:adapter='@{model.adapter}'/>
 
         <androidx.core.widget.ContentLoadingProgressBar
             style="?android:attr/progressBarStyleLarge"
@@ -29,21 +30,21 @@
             android:indeterminate="true"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:visibility="@{model.loading}"
+            android:visibility='@{model.loading}'
             android:layout_gravity="center"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:visibility="@{model.showEmpty}"
+            android:visibility='@{model.showEmpty}'
             android:text="@string/no_car_details_fetched"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:visibility="@{model.showNoInternetConnection}"
+            android:visibility='@{model.showNoInternetConnection}'
             android:text="@string/no_internet_connection"/>
 
 
