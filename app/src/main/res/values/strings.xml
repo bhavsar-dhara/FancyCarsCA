@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Fancy Cars App</string>
+
+    <string name="loading">Loading...</string>
+    <string name="car_image">car image</string>
+
+</resources>
