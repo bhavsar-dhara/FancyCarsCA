@@ -1,5 +1,12 @@
 package com.dhara.myfancycarsapp.fancycars.model;
 
+import android.widget.ImageView;
+
+import androidx.databinding.BindingAdapter;
+
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
+
 public class FancyCarDetails {
 
     private int id;
@@ -16,6 +23,14 @@ public class FancyCarDetails {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    @BindingAdapter({"picture"})
+    public static void loadImage(ImageView view, String imageUrl) {
+        Glide.with(view.getContext())
+                .load(imageUrl)
+//                .apply(RequestOptions.centerCropTransform())
+                .into(view);
     }
 
     public String getPicture() {
