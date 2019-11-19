@@ -14,11 +14,14 @@ import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.dhara.myfancycarsapp.R;
 import com.dhara.myfancycarsapp.databinding.FancyCarsFragmentBinding;
 import com.dhara.myfancycarsapp.fancycars.model.FancyCarDetails;
 import com.dhara.myfancycarsapp.fancycars.viewmodel.FancyCarsViewModel;
+import com.dhara.myfancycarsapp.utils.EndlessRecyclerViewScrollListener;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -86,6 +89,23 @@ public class FancyCarsFragment extends Fragment {
                 }
             }
         });
+
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(context);
+        // Triggered only when new data needs to be appended to the list
+        // Add whatever code is needed to append new items to the bottom of the list
+        // Store a member variable for the listener
+        EndlessRecyclerViewScrollListener scrollListener = new EndlessRecyclerViewScrollListener(linearLayoutManager) {
+            @Override
+            public void onLoadMore(int page, int totalItemsCount, RecyclerView view) {
+                // Triggered only when new data needs to be appended to the list
+                // Add whatever code is needed to append new items to the bottom of the list
+                loadNextDataFromApi(page);
+            }
+        };
+
+        RecyclerView carsView = binding.carList;
+        // Adds the scroll listener to RecyclerView
+        carsView.addOnScrollListener(scrollListener);
     }
 
     @Override
@@ -135,4 +155,24 @@ public class FancyCarsFragment extends Fragment {
             mViewModel.showList.set(View.GONE);
         }
     };
+
+    // Append the next page of data into the adapter
+    // This method probably sends out a network request and appends new data items to your adapter.
+    private void loadNextDataFromApi(int offset) {
+        // Send an API request to retrieve appropriate paginated data
+        //  --> Send the request including an offset value (i.e `page`) as a query parameter.
+        //  --> Deserialize and construct new model objects from the API response
+        //  --> Append the new data objects to the existing set of items inside the array of items
+        //  --> Notify the adapter of the new items made with `notifyItemRangeInserted()`
+    }
+
+    // Method to reset the endless scroll state
+    private void resetRecyclerView() {
+//        // 1. First, clear the array of data
+//        listOfItems.clear();
+//        // 2. Notify the adapter of the update
+//        recyclerAdapterOfItems.notifyDataSetChanged(); // or notifyItemRangeRemoved
+//        // 3. Reset endless scroll listener when performing a new search
+//        scrollListener.resetState();
+    }
 }
