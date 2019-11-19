@@ -29,12 +29,12 @@
     
             <ImageView
                 android:id="@+id/picture"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:layout_marginEnd="15dp"
                 android:layout_alignParentStart="true"
                 android:adjustViewBounds="true"
-                android:picture="@{viewModel.getCarDetailsAt(position).picture}"
+                app:picture="@{viewModel.getCarDetailsAt(position).picture}"
                 android:contentDescription="@string/car_image" />
     
             <TextView

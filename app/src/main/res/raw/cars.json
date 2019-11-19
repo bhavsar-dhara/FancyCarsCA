@@ -1,7 +1,7 @@
 [
   {
     "id": 0,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 4",
     "make": "MyMake3",
     "model": "MyModel3",
@@ -10,7 +10,7 @@
   },
   {
     "id": 1,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 4",
     "make": "MyMake3",
     "model": "MyModel2",
@@ -19,7 +19,7 @@
   },
   {
     "id": 2,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 3",
     "make": "MyMake5",
     "model": "MyModel1",
@@ -28,7 +28,7 @@
   },
   {
     "id": 3,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 1",
     "make": "MyMake3",
     "model": "MyModel4",
@@ -37,7 +37,7 @@
   },
   {
     "id": 4,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 3",
     "make": "MyMake3",
     "model": "MyModel2",
@@ -46,7 +46,7 @@
   },
   {
     "id": 5,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 5",
     "make": "MyMake4",
     "model": "MyModel2",
@@ -55,7 +55,7 @@
   },
   {
     "id": 6,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 1",
     "make": "MyMake3",
     "model": "MyModel2",
@@ -64,7 +64,7 @@
   },
   {
     "id": 7,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 4",
     "make": "MyMake1",
     "model": "MyModel4",
@@ -73,7 +73,7 @@
   },
   {
     "id": 8,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 4",
     "make": "MyMake1",
     "model": "MyModel2",
@@ -82,7 +82,7 @@
   },
   {
     "id": 9,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 1",
     "make": "MyMake2",
     "model": "MyModel3",
@@ -91,7 +91,7 @@
   },
   {
     "id": 10,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 1",
     "make": "MyMake2",
     "model": "MyModel4",
@@ -100,7 +100,7 @@
   },
   {
     "id": 11,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 4",
     "make": "MyMake4",
     "model": "MyModel2",
@@ -109,7 +109,7 @@
   },
   {
     "id": 12,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 4",
     "make": "MyMake1",
     "model": "MyModel3",
@@ -118,7 +118,7 @@
   },
   {
     "id": 13,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 3",
     "make": "MyMake5",
     "model": "MyModel1",
@@ -127,7 +127,7 @@
   },
   {
     "id": 14,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 2",
     "make": "MyMake1",
     "model": "MyModel4",
@@ -136,7 +136,7 @@
   },
   {
     "id": 15,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 4",
     "make": "MyMake5",
     "model": "MyModel5",
@@ -145,7 +145,7 @@
   },
   {
     "id": 16,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 5",
     "make": "MyMake4",
     "model": "MyModel4",
@@ -154,7 +154,7 @@
   },
   {
     "id": 17,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 2",
     "make": "MyMake2",
     "model": "MyModel2",
@@ -163,7 +163,7 @@
   },
   {
     "id": 18,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 4",
     "make": "MyMake2",
     "model": "MyModel2",
@@ -172,7 +172,7 @@
   },
   {
     "id": 19,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 1",
     "make": "MyMake2",
     "model": "MyModel4",
@@ -181,7 +181,7 @@
   },
   {
     "id": 20,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 2",
     "make": "MyMake1",
     "model": "MyModel5",
@@ -190,7 +190,7 @@
   },
   {
     "id": 21,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 2",
     "make": "MyMake1",
     "model": "MyModel4",
@@ -199,7 +199,7 @@
   },
   {
     "id": 22,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 3",
     "make": "MyMake2",
     "model": "MyModel3",
@@ -208,7 +208,7 @@
   },
   {
     "id": 23,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 3",
     "make": "MyMake2",
     "model": "MyModel2",
@@ -217,7 +217,7 @@
   },
   {
     "id": 24,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 2",
     "make": "MyMake3",
     "model": "MyModel2",
@@ -226,7 +226,7 @@
   },
   {
     "id": 25,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 3",
     "make": "MyMake1",
     "model": "MyModel3",
@@ -235,7 +235,7 @@
   },
   {
     "id": 26,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 3",
     "make": "MyMake2",
     "model": "MyModel5",
@@ -244,7 +244,7 @@
   },
   {
     "id": 27,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 3",
     "make": "MyMake3",
     "model": "MyModel3",
@@ -253,7 +253,7 @@
   },
   {
     "id": 28,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 4",
     "make": "MyMake3",
     "model": "MyModel1",
@@ -262,7 +262,7 @@
   },
   {
     "id": 29,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 1",
     "make": "MyMake1",
     "model": "MyModel3",
@@ -271,7 +271,7 @@
   },
   {
     "id": 30,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 5",
     "make": "MyMake1",
     "model": "MyModel3",
@@ -280,7 +280,7 @@
   },
   {
     "id": 31,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 2",
     "make": "MyMake1",
     "model": "MyModel1",
@@ -289,7 +289,7 @@
   },
   {
     "id": 32,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 5",
     "make": "MyMake3",
     "model": "MyModel3",
@@ -298,7 +298,7 @@
   },
   {
     "id": 33,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 1",
     "make": "MyMake2",
     "model": "MyModel4",
@@ -307,7 +307,7 @@
   },
   {
     "id": 34,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 1",
     "make": "MyMake2",
     "model": "MyModel3",
@@ -316,7 +316,7 @@
   },
   {
     "id": 35,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 3",
     "make": "MyMake5",
     "model": "MyModel3",
@@ -325,7 +325,7 @@
   },
   {
     "id": 36,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 3",
     "make": "MyMake2",
     "model": "MyModel2",
@@ -334,7 +334,7 @@
   },
   {
     "id": 37,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 2",
     "make": "MyMake2",
     "model": "MyModel4",
@@ -343,7 +343,7 @@
   },
   {
     "id": 38,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 2",
     "make": "MyMake2",
     "model": "MyModel3",
@@ -352,7 +352,7 @@
   },
   {
     "id": 39,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 3",
     "make": "MyMake4",
     "model": "MyModel5",
@@ -361,7 +361,7 @@
   },
   {
     "id": 40,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 4",
     "make": "MyMake4",
     "model": "MyModel3",
@@ -370,7 +370,7 @@
   },
   {
     "id": 41,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 1",
     "make": "MyMake2",
     "model": "MyModel4",
@@ -379,7 +379,7 @@
   },
   {
     "id": 42,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 2",
     "make": "MyMake5",
     "model": "MyModel1",
@@ -388,7 +388,7 @@
   },
   {
     "id": 43,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 1",
     "make": "MyMake4",
     "model": "MyModel5",
@@ -397,7 +397,7 @@
   },
   {
     "id": 44,
-    "picture": "http://placehold.it/108x108?text=MyFancyCars.ca",
+    "picture": "https://via.placeholder.com/108x108?text=MyFancyCars.ca",
     "name": "My Fancy Car 1",
     "make": "MyMake5",
     "model": "MyModel1",

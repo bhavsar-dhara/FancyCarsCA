@@ -7,6 +7,8 @@ import androidx.databinding.BindingAdapter;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 
+import timber.log.Timber;
+
 public class FancyCarDetails {
 
     private int id;
@@ -27,9 +29,10 @@ public class FancyCarDetails {
 
     @BindingAdapter({"picture"})
     public static void loadImage(ImageView view, String imageUrl) {
+        Timber.d("url = %s", imageUrl);
         Glide.with(view.getContext())
                 .load(imageUrl)
-//                .apply(RequestOptions.centerCropTransform())
+                .apply(RequestOptions.centerCropTransform())
                 .into(view);
     }
 

@@ -29,6 +29,9 @@ import java.util.List;
 
 import timber.log.Timber;
 
+/**
+ * @link https://androidwave.com/android-data-binding-recyclerview/ (endless scrolling data requirements)
+ */
 public class FancyCarsFragment extends Fragment {
 
     private static final String TAG = FancyCarsFragment.class.getSimpleName();
