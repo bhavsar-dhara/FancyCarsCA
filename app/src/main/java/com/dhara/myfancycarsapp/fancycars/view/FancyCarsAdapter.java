@@ -17,6 +17,8 @@ import java.util.List;
 
 public class FancyCarsAdapter extends RecyclerView.Adapter<FancyCarsAdapter.GenericViewHolder> {
 
+    private static final String TAG = FancyCarsAdapter.class.getSimpleName();
+
     private int layoutId;
     private List<FancyCarDetails> cars;
     private FancyCarsViewModel viewModel;

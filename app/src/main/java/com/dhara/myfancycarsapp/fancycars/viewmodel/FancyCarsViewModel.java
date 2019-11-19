@@ -22,6 +22,7 @@ public class FancyCarsViewModel extends ViewModel {
     public ObservableInt loading;
     public ObservableInt showEmpty;
     public ObservableInt showNoInternetConnection;
+    public ObservableInt showList;
 
     public void init() {
         adapter = new FancyCarsAdapter(R.layout.car_item, this);
@@ -29,6 +30,7 @@ public class FancyCarsViewModel extends ViewModel {
         loading = new ObservableInt(View.GONE);
         showEmpty = new ObservableInt(View.GONE);
         showNoInternetConnection = new ObservableInt(View.GONE);
+        showList = new ObservableInt((View.VISIBLE));
     }
 
     public void fetchList() {

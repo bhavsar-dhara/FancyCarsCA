@@ -1,14 +1,16 @@
 package com.dhara.myfancycarsapp.fancycars.view;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProviders;
-
-import android.os.Bundle;
 
 import com.dhara.myfancycarsapp.R;
 import com.dhara.myfancycarsapp.fancycars.viewmodel.FancyCarsViewModel;
 
 public class FancyCarsActivity extends AppCompatActivity {
+
+    private static final String TAG = FancyCarsActivity.class.getSimpleName();
 
     FancyCarsViewModel viewModel;
 
@@ -26,7 +28,12 @@ public class FancyCarsActivity extends AppCompatActivity {
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.container, FancyCarsFragment.newInstance())
                     .commitNow();
+            viewModel.init();
         }
     }
-    // TODO: handle app when no network connection present
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
 }
