@@ -9,11 +9,22 @@
             type="com.dhara.myfancycarsapp.fancycars.viewmodel.FancyCarsViewModel" />
     </data>
 
-    <FrameLayout
+    <LinearLayout
         android:id="@+id/fancycars"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         tools:context=".fancycars.view.FancyCarsFragment">
+
+        <Spinner
+            android:id="@+id/sort_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:entries="@array/sort_array"
+            app:newValue="@{model.sortOn}"
+            app:onItemSelected="@{() -> model.onSortClick()}" />
+<!--        app:selectedValue="@={model.sortOn}"-->
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/car_list"
@@ -47,7 +58,6 @@
             android:visibility='@{model.showNoInternetConnection}'
             android:text="@string/no_internet_connection"/>
 
-
-    </FrameLayout>
+    </LinearLayout>
 
 </layout>

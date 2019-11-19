@@ -13,6 +13,8 @@ import com.dhara.myfancycarsapp.BR;
 import com.dhara.myfancycarsapp.fancycars.model.FancyCarDetails;
 import com.dhara.myfancycarsapp.fancycars.viewmodel.FancyCarsViewModel;
 
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class FancyCarsAdapter extends RecyclerView.Adapter<FancyCarsAdapter.GenericViewHolder> {
@@ -71,6 +73,29 @@ public class FancyCarsAdapter extends RecyclerView.Adapter<FancyCarsAdapter.Gene
             binding.setVariable(BR.position, position);
             binding.executePendingBindings();
         }
+    }
 
+    // Comparator for Ascending Order based on Name
+    private Comparator<FancyCarDetails> NameAscComparator = new Comparator<FancyCarDetails>() {
+        public int compare(FancyCarDetails name1, FancyCarDetails name2) {
+            return (name1.getName()).compareToIgnoreCase(name2.getName());
+        }
+    };
+
+    public void sortBasedOnName() {
+        Collections.sort(cars, NameAscComparator);
+        notifyDataSetChanged();
+    }
+
+    // Comparator for Ascending Order based on Availability
+    public Comparator<FancyCarDetails> AvailabilityAscComparator = new Comparator<FancyCarDetails>() {
+        public int compare(FancyCarDetails availability1, FancyCarDetails availability2) {
+            return (availability1.getAvailability()).compareToIgnoreCase(availability2.getAvailability());
+        }
+    };
+
+    public void sortBasedOnAvailability() {
+        Collections.sort(cars, AvailabilityAscComparator);
+        notifyDataSetChanged();
     }
 }
