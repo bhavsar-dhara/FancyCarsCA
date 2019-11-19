@@ -22,9 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="12dp"
             android:entries="@array/sort_array"
-            app:newValue="@{model.sortOn}"
-            app:onItemSelected="@{() -> model.onSortClick()}" />
-<!--        app:selectedValue="@={model.sortOn}"-->
+            android:onItemSelected="@{model::onSelectItem}" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/car_list"
