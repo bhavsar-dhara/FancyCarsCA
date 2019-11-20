@@ -41,6 +41,7 @@ public class FancyCarsFragment extends Fragment {
     private FancyCarsFragmentBinding binding;
 
     private ConnectivityManager manager;
+    private EndlessRecyclerViewScrollListener scrollListener;
 
     public static FancyCarsFragment newInstance() {
         return new FancyCarsFragment();
@@ -94,21 +95,23 @@ public class FancyCarsFragment extends Fragment {
         });
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(context);
+        linearLayoutManager.setOrientation(RecyclerView.VERTICAL);
+        binding.carList.setLayoutManager(linearLayoutManager);
         // Triggered only when new data needs to be appended to the list
         // Add whatever code is needed to append new items to the bottom of the list
         // Store a member variable for the listener
-        EndlessRecyclerViewScrollListener scrollListener = new EndlessRecyclerViewScrollListener(linearLayoutManager) {
+        scrollListener = new EndlessRecyclerViewScrollListener(linearLayoutManager) {
             @Override
             public void onLoadMore(int page, int totalItemsCount, RecyclerView view) {
                 // Triggered only when new data needs to be appended to the list
                 // Add whatever code is needed to append new items to the bottom of the list
+                Timber.d("onLoadMore: ");
                 loadNextDataFromApi(page);
             }
         };
 
-        RecyclerView carsView = binding.carList;
         // Adds the scroll listener to RecyclerView
-        carsView.addOnScrollListener(scrollListener);
+        binding.carList.addOnScrollListener(scrollListener);
     }
 
     @Override
@@ -130,6 +133,7 @@ public class FancyCarsFragment extends Fragment {
         super.onDetach();
         // To remove any leaks from happening
         context = null;
+        scrollListener = null;
     }
 
     /**
@@ -167,15 +171,21 @@ public class FancyCarsFragment extends Fragment {
         //  --> Deserialize and construct new model objects from the API response
         //  --> Append the new data objects to the existing set of items inside the array of items
         //  --> Notify the adapter of the new items made with `notifyItemRangeInserted()`
+
+
+        // but since we are using the mock data with no page offset -
+        // assumed here to call the same list again and again
+        mViewModel.fetchList();
     }
 
-    // Method to reset the endless scroll state
+    // Method to reset the endless scroll state - if required on sorting clicked?
     private void resetRecyclerView() {
-//        // 1. First, clear the array of data
-//        listOfItems.clear();
-//        // 2. Notify the adapter of the update
-//        recyclerAdapterOfItems.notifyDataSetChanged(); // or notifyItemRangeRemoved
-//        // 3. Reset endless scroll listener when performing a new search
-//        scrollListener.resetState();
+        // 1. First, clear the array of data
+        mViewModel.getCarsList().clear();
+        mViewModel.setCarsInAdapter(mViewModel.getCarsList());
+        // 2. Notify the adapter of the update
+        mViewModel.getAdapter().notifyDataSetChanged(); // or notifyItemRangeRemoved
+        // 3. Reset endless scroll listener when performing a new search
+        scrollListener.resetState();
     }
 }

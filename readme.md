@@ -10,10 +10,11 @@ A. to view list of the following car details:
     5. Availability {"In Dealership" / "Out of Stock" / "Unavailable"}
     6. Year
 B. The app will also handle infinite scrolling for viewing the car listing.
-C. There is a dropdown to sort the result based on name and availability.
+C. There is a dropdown to sort the result list based on name and availability.
 D. "Buy" button will be visible for cars whose availability is "In Dealership".
 E. Also showing a message across the screen when no network connection detected based on the assumption that the app requires network connection for it to work smoothly.
-F. Also mocked the backend services with stubbed API data based on the data provided in the assignment.
+F. Also mocked the backend services with stubbed API data based on the data details provided in the assignment.
+
 
 ## Architecture:
 
@@ -29,6 +30,6 @@ This MVVM architecture as well as data-binding combination allows to easily main
 
 Utilized the Android's **Material Design** for the UI components look and have standardize feel.
 
-Also used **Leak Canary** library to catch leaks and **Timber** library for better logging and initializied them in the app's application file.
+Also used **Leak Canary** library to catch leaks and **Timber** library for better logging and initialized them in the app's application file.
 
 
