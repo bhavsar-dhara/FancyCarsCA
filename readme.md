@@ -2,18 +2,18 @@
 
 This assignment android app implementation allows user
 
-A. to view list of the following car details:
+1. To view list of the following car details:
     1. Name of the car
     2. Picture of the car
     3. Make
     4. Model
     5. Availability {"In Dealership" / "Out of Stock" / "Unavailable"}
-    6. Year
-B. The app will also handle infinite scrolling for viewing the car listing.
-C. There is a dropdown to sort the result list based on name and availability.
-D. "Buy" button will be visible for cars whose availability is "In Dealership".
-E. Also showing a message across the screen when no network connection detected based on the assumption that the app requires network connection for it to work smoothly.
-F. Also mocked the backend services with stubbed API data based on the data details provided in the assignment.
+    6. Year 
+2. The app will also handle infinite scrolling for viewing the car listing.
+3. There is a dropdown to sort the result list based on name and availability.
+4. "Buy" button will be visible for cars whose availability is "In Dealership".
+5. Also showing a message across the screen when no network connection detected based on the assumption that the app requires network connection for it to work smoothly.
+6. Also mocked the backend services with stubbed API data based on the data details provided in the assignment.
 
 
 ## Architecture:
