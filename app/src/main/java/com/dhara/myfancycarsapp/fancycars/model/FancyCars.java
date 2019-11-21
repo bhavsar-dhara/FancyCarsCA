@@ -7,6 +7,7 @@ import com.dhara.myfancycarsapp.FancyCarsApplication;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.ListIterator;
 
 import timber.log.Timber;
 
@@ -27,6 +28,13 @@ public class FancyCars extends BaseObservable {
     public void fetchList() {
         try {
             carsList = FancyCarsApplication.getApiService().cars().getCarDetailsList();
+            CarAvailability availability;
+            for (ListIterator itr = carsList.listIterator(); itr.hasNext(); ) {
+                FancyCarDetails fancyCarDetails =  (FancyCarDetails) itr.next();
+                availability = fetchAvailability(fancyCarDetails.getId());
+                fancyCarDetails.setAvailability(availability.getAvailability());
+                itr.set(fancyCarDetails);
+            }
             carsCopyList.addAll(carsList);
             Timber.d("fetchList: #cars = %s", carsList.size());
             Timber.d("fetchList: #total cars = %s", carsCopyList.size());

@@ -73,7 +73,7 @@
                 android:layout_height="wrap_content"
                 android:layout_toEndOf="@id/picture"
                 android:layout_below="@id/model"
-                android:text="@{carAvailability}"
+                android:text="@{viewModel.getCarDetailsAt(position).availability}"
                 tools:text="Car Availability" />
     
             <TextView

@@ -117,8 +117,8 @@ public class FancyCarsViewModel extends AndroidViewModel {
      * @return int View.VISIBLE or View.GONE
      */
     public int buyBtnVisibility(Integer index) {
-        if (fancyCars.fetchAvailability(index) != null &&
-                fancyCars.fetchAvailability(index).getAvailability().equals("In Dealership")) {
+        if (getCarDetailsAt(index) != null &&
+                getCarDetailsAt(index).getAvailability().equals("In Dealership")) {
             return View.VISIBLE;
         } else {
             return View.GONE;

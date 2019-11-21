@@ -60,9 +60,9 @@ public class FancyCarsAdapter extends RecyclerView.Adapter<FancyCarsAdapter.Gene
         void bind(FancyCarsViewModel viewModel, Integer position) {
             binding.setVariable(BR.viewModel, viewModel);
             binding.setVariable(BR.position, position);
-            String availability = viewModel.getCarAvailability(position);
-            binding.setVariable(BR.carAvailability, availability);
-            cars.get(position).setAvailability(availability);
+            // String availability = viewModel.getCarAvailability(position);
+            // binding.setVariable(BR.carAvailability, availability);
+            // cars.get(position).setAvailability(availability);
             binding.executePendingBindings();
         }
     }
