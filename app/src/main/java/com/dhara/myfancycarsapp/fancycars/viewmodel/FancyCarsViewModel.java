@@ -103,14 +103,22 @@ public class FancyCarsViewModel extends AndroidViewModel {
         return null;
     }
 
+    public String getCarAvailability(Integer index) {
+        String availability = "";
+        if (fancyCars.fetchAvailability(index) != null) {
+            availability = fancyCars.fetchAvailability(index).getAvailability();
+        }
+        return availability;
+    }
+
     /**
      * function to set the visibility of the "buy" button
      * @param index Integer (position of the item in the list)
      * @return int View.VISIBLE or View.GONE
      */
     public int buyBtnVisibility(Integer index) {
-        if (getCarDetailsAt(index) != null &&
-                getCarDetailsAt(index).getAvailability().equals("In Dealership")) {
+        if (fancyCars.fetchAvailability(index) != null &&
+                fancyCars.fetchAvailability(index).getAvailability().equals("In Dealership")) {
             return View.VISIBLE;
         } else {
             return View.GONE;

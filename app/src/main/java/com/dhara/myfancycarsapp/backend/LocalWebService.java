@@ -4,6 +4,7 @@ import android.content.Context;
 
 import com.dhara.myfancycarsapp.R;
 import com.dhara.myfancycarsapp.fancycars.model.AvailabilityResponse;
+import com.dhara.myfancycarsapp.fancycars.model.CarAvailability;
 import com.dhara.myfancycarsapp.fancycars.model.CarsResponse;
 import com.dhara.myfancycarsapp.fancycars.model.FancyCarDetails;
 import com.google.gson.Gson;
@@ -32,11 +33,10 @@ public class LocalWebService implements ApiService {
         Timber.d("AvailabilityResponse: ");
         // Thread.sleep(2000); // emulate network delay
         AvailabilityResponse availabilityResponse = new AvailabilityResponse();
-        CarsResponse carsResponse = new CarsResponse();
-        carsResponse.setCarDetailsList(gson.fromJson(new InputStreamReader(context.getResources().openRawResource(R.raw.cars)), FancyCarDetails[].class));
-        for (FancyCarDetails car : carsResponse.getCarDetailsList()) {
-            if (car.getId() == id) {
-                availabilityResponse.setAvailability(car.getAvailability());
+        availabilityResponse.setAvailabilityList(gson.fromJson(new InputStreamReader(context.getResources().openRawResource(R.raw.cars_avail)), CarAvailability[].class));
+        for (CarAvailability availability : availabilityResponse.getAvailabilityList()) {
+            if (availability.getId() == id) {
+                availabilityResponse.setAvailability(availability);
             }
         }
         return availabilityResponse;

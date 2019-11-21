@@ -36,4 +36,15 @@ public class FancyCars extends BaseObservable {
             e.printStackTrace();
         }
     }
+
+    public CarAvailability fetchAvailability(Integer index) {
+        CarAvailability availability = null;
+        try {
+            availability = FancyCarsApplication.getApiService().availability(index).getAvailability();
+        } catch (Exception e) {
+            Timber.e(e, "fetchAvailability: ");
+            e.printStackTrace();
+        }
+        return availability;
+    }
 }

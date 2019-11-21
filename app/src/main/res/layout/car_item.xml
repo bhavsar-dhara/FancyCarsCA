@@ -10,6 +10,9 @@
         <variable
             name="position"
             type="java.lang.Integer" />
+        <variable
+            name="carAvailability"
+            type="java.lang.String" />
     </data>
     
     <androidx.cardview.widget.CardView
@@ -70,7 +73,7 @@
                 android:layout_height="wrap_content"
                 android:layout_toEndOf="@id/picture"
                 android:layout_below="@id/model"
-                android:text='@{viewModel.getCarDetailsAt(position).availability}'
+                android:text="@{carAvailability}"
                 tools:text="Car Availability" />
     
             <TextView
